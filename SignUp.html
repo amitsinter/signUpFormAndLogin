@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./SignUpStyle.css">
+    <script src="./signUp.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="login-page">
+       <div class="form">
+           <form class="register"  id="sign" class="sig" method="POST" >
+            
+                <h1>Sign Up</h1>
+                <label>First Name: <input type="text" name="firstname" value="" placeholder="First Name" required></label>
+                
+                <label>Last Name: <input type="text" name="lastname" value="" placeholder="Last Name" required></label>
+                <label>User Name: <input type="text" name="username" value="" placeholder="User Name" required></label>
+                <label>Phone: <input type="number" name="phone" value="" placeholder="Phone Number" required></label>
+
+                <label>Email: <input type="email" name="email" value="" placeholder="Email" required></label>
+                
+                <label>Gender:</label>
+                
+                <input type="radio" name="women" >Woman
+                <input type="radio" name="men" >Man
+                <input type="radio" name="trans" >None
+                <br>
+                <br>
+                <label>Password: <input type="password" id="password" value="" placeholder="Enter password" ></label>
+                
+                <label>Repeat Password: <input type="password" id="repeatpassword" value="" placeholder="Repeat password" ></label>
+                
+                <div class="buttons">
+                    <button type="button" class="cancel" id="cancel" >Cancel</button>
+                    <input type="submit" class="sign-up" id="SignUp" value="Sign Up"> </input>
+                </div>
+               
+        </form>
+        </div>
+    </div>
+</body>
+</html>
